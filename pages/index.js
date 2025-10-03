@@ -1,30 +1,32 @@
-import Layout from "@/components/layout/Layout"
-import Banner1 from "@/components/sections/Banner1"
-import Counter1 from "@/components/sections/Counter1"
-import Pricing1 from "@/components/sections/Pricing1"
-import Roadmap from "@/components/sections/Roadmap"
-import Testimonial1 from "@/components/sections/Testimonial1"
-import Tools from "@/components/sections/Tools"
-import UseCases from "@/components/sections/UseCases"
-import Video from "@/components/sections/Video"
-import Writing from "@/components/sections/Writing"
-export default function Home1() {
+import Layout from "@/components/layout/Layout";
+import About1 from "@/components/sections/About1";
+import Banner2 from "@/components/sections/Banner2";
+import Brand1 from "@/components/sections/Brand1";
+import Compare from "@/components/sections/Compare";
+import Counter2 from "@/components/sections/Counter2";
+import Features from "@/components/sections/Features";
+import Language from "@/components/sections/Language";
+import Pricing2 from "@/components/sections/Pricing2";
+import Services1 from "@/components/sections/Services1";
+import Testimonial2 from "@/components/sections/Testimonial2";
+export default function Home2() {
+  return (
+    <>
+      <Layout headerStyle={2} footerStyle={2}>
+        <Banner2 />
+        {/* <Features /> */}
+        {/* <Brand1 /> */}
+        <About1 />
+        <Compare />
 
-    return (
-        <>
-            <Layout mainCls="main-content fix" headerStyle={1} footerStyle={1}>
-                <Banner1 />
-                <Video />
-                <Counter1 />
-                <Writing />
-                <UseCases />
-                <Roadmap />
-                <Pricing1 />
-                <Tools />
-                <Testimonial1 />
-
-
-            </Layout>
-        </>
-    )
+        {/* <Testimonial2 /> */}
+        {/* <Services1 /> */}
+        <Language />
+        <div className="area-bg" data-background="assets/img/bg/area_bg.jpg">
+          {/* <Pricing2 /> */}
+          {/* <Counter2 /> */}
+        </div>
+      </Layout>
+    </>
+  );
 }

@@ -1,15 +1,17 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 const PageHead = ({ headTitle }) => {
-    return (
-        <>
-            <Head>
-                <title>
-                    {headTitle ? headTitle : "Dex.AI - AI Writer & Tech Startup Landing Page Nextjs Template"}
-                </title>
-            </Head>
-        </>
-    )
-}
+  return (
+    <>
+      <Head>
+        <title>
+          {headTitle
+            ? headTitle
+            : "Varantara - Menghubungkan Nilai & Mewujudkan Peluang."}
+        </title>
+      </Head>
+    </>
+  );
+};
 
-export default PageHead
+export default PageHead;
